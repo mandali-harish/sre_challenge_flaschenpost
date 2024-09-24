@@ -51,6 +51,7 @@ Output:
 pod "temp" deleted
 ```
 Alternatives:
+
 a. For Minikube:
 ```
 minikube ssh
