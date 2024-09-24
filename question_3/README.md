@@ -1,10 +1,11 @@
 ### Overview
-A Python program to analyze a log file and summarize the results
+A Python program to analyze a log file and summarize the results.
 
 ### Requirements:
     - Python 3.x
-    - External Libraries: `tabulate` for output formatting, 'PyYAML' to load, parse, and write YAML
-
+    - External modules: `tabulate` for output formatting, 'PyYAML' to load, parse, and write YAML
+    
+To install modules:
 ```
 pip install -r requirements.txt
 ```
