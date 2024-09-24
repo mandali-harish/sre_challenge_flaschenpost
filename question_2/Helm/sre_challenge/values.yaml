@@ -1,0 +1,35 @@
+# Default values for sre_challenge.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 3
+
+image:
+  repository: strm/helloworld-http
+  tag: latest
+
+service:
+  type: NodePort
+  port: 80
+  nodePort: 30134
+  protocol: TCP
+  
+livenessProbe:
+  tcpSocket:
+    port: 80
+  initialDelaySeconds: 10
+readinessProbe:
+  httpGet:
+    path: /
+    port: 80
+  initialDelaySeconds: 10
+  periodSeconds: 1
+  failureThreshold: 2
+
+cronJob:
+  schedule: "*/30 * * * *"
+  image:
+    repository: busybox
+    tag: 1.28
+  restartPolicy: OnFailure
+
