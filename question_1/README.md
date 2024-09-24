@@ -2,11 +2,9 @@
 This folder contains Terraform code for managing and provisioning infrastructure in Azure. 
 
 ### Pre-requisites:
-- Azure cli installed on local machine.
-```
-curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
-```
-- Login into azure cli. 
+- [Azure cli](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) installed on local machine.
+
+- [Login](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest#az-login) into azure cli. 
 ```
 az login
 ```
