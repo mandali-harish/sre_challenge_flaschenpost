@@ -22,3 +22,6 @@ terraform init
 terraform plan -no-color > tfplan.txt
 
 ```
+
+#### Note:
+ For Storage Account Container resource, the storage account name has been shortened to 'srechallengeflaschenpost' instead of the given 'srechallengeforflaschenpost' as the limitation on max number of characters in name is 24.
