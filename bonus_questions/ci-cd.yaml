@@ -1,4 +1,4 @@
-name: CI Pipeline for a backend microservice
+name: CI/CD Pipeline for a backend microservice
 
 on:
   push:
